@@ -1,11 +1,13 @@
-import axios from 'axios';
+//import api from "./helpers/api";
+import api from "axios";
 
-export const API = 'https://hn.algolia.com/api/v3';
+
 
 export const fetchData = async query => {
-  const url = `${API}/search?query=${query}`;
+  const url = `http://www.mocky.io/v2/5e382611310000e489d37ff9`;
 
-  return await axios.get(url);
+
+  return await api.get(url);
 };
 
 fetchData('react');
